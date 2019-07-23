@@ -9,37 +9,136 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 
 <body>
-	<div class="container">
-		<h1>h1</h1>
-		<h2>h2</h2>
-		<h3>h3</h3>
-		<h4>h4</h4>
-		<h5>h5</h5>
-		<h6>h6</h6>
-		<div class="trans">trans</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, adipisci libero quasi dolorem voluptate? Voluptas tempora accusantium placeat beatae velit et nulla, possimus delectus, doloremque error porro illum at, minus nobis vitae ut eius, accusamus enim! Doloremque, facere dolorum. Inventore asperiores quibusdam quasi quo cumque, fugit doloremque rem repudiandae possimus non facere quidem reprehenderit cupiditate doloribus ullam. Dolor consequuntur ducimus quo quia esse, quaerat, fugiat sapiente ut atque tenetur.</p>
-		<a href="">I am link</a>
-		<button>button</button>
-		<ul>
-			<li>list</li>
-			<li>list</li>
-			<li>list</li>
-			<li>list</li>
-		</ul>
-		<ol>
-			<li>ol list</li>
-			<li>ol list</li>
-			<li>ol list</li>
-		</ol>
-		<img src="https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/4328153/android/sticker.png" alt="">
+	<div id="fullpage">
+		<section class="section scene">
+			<div class="block"></div>
+			<div class="container">
+				<form action="">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required>
+					<br><br>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required>
+					<br><br>
+					<label for="password">password:</label>
+					<input type="password" id="password" name="password" required>
+					<br><br>
+					<label for="question">Security question:</label>
+					<select name="question" id="question">
+						<option value="q1">Q1</option>
+						<option value="q2">Q2</option>
+						<option value="q3">Q3</option>
+					</select>
+					<br><br>
+					<textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+					<br><br>
+					<input type="submit">
+				</form>
+			</div>
+		</section>
+		<section class="section scene">
+			<div class="block"></div>
+			<div class="container">
+				<ul class="cards">
+					<li class="card">
+						<div class="top-container">
+							<div class="icon">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nintendo_Switch_Logo_%28without_text%29.svg/768px-Nintendo_Switch_Logo_%28without_text%29.svg.png" alt="">
+							</div>
+						</div>
+						<div class="bottom-container">
+							<h4>Switch</h4>
+							<p>Soluptatibus quasi dolorem at quas, veniam dicta possimus laboriosam nam veritatis explicabo, doloremque repellendus adipisci numquam sequi qui earum. Cumi, hic soluta adipisci.</p>
+							<div class="btn-row">
+								<a href="javascript:;" class="btn-more">more</a>
+							</div>
+						</div>
+					</li>
+					<li class="card">
+						<div class="top-container">
+							<div class="icon">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nintendo_Switch_Logo_%28without_text%29.svg/768px-Nintendo_Switch_Logo_%28without_text%29.svg.png" alt="">
+							</div>
+						</div>
+						<div class="bottom-container">
+							<h4>Switch</h4>
+							<p>Soluptatibus quasi dolorem at quas, veniam dicta possimus laboriosam nam veritatis explicabo, doloremque repellendus adipisci numquam sequi qui earum. Cumi, hic soluta adipisci.</p>
+							<div class="btn-row">
+								<a href="javascript:;" class="btn-more">more</a>
+							</div>
+						</div>
+					</li>
+					<li class="card">
+						<div class="top-container">
+							<div class="icon">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nintendo_Switch_Logo_%28without_text%29.svg/768px-Nintendo_Switch_Logo_%28without_text%29.svg.png" alt="">
+							</div>
+						</div>
+						<div class="bottom-container">
+							<h4>Switch</h4>
+							<p>Soluptatibus quasi dolorem at quas, veniam dicta possimus laboriosam nam veritatis explicabo, doloremque repellendus adipisci numquam sequi qui earum. Cumi, hic soluta adipisci.</p>
+							<div class="btn-row">
+								<a href="javascript:;" class="btn-more">more</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section scene">
+			<div class="container">
+				<div class="row">
+					<div class="text-side">
+						<div class="block"></div>
+						<h3>Title Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius debitis enim, deserunt repellendus vitae odit natus optio. Nisi, quod!</p>
+						<div class="btn-row">
+							<a href="javascript:;" class="btn-more">More</a>
+						</div>
+					</div>
+					<div class="picture-side">
+						<img src="http://streetwill.co/uploads/post/photo/856/medium_SC0Cn9S_tZDswR7A27-gSOg4iZ8FZPSDnmKTbvZPi2s.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section scene">
+			<div id="player" class="youtube-container"></div>
+		</section>
+		<section class="section scene">
+			<div class="container">
+				<div class="slide">
+					<h2>Slide 1</h2>
+				</div>
+				<div class="slide">
+					<h2>Slide 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, adipisci libero quasi dolorem voluptate? Voluptere dolorum. Inventore asperiores quibusdam quasi quo cumque, fugit doloremque rem repudiandae possimus non facere quidem reprehenderit cupiditate doloribus ullam. Dolor consequuntur ducimus quo quia esse, quaerat, fugiat sapiente ut atque tenetur.</p>
+				</div>
+				<div class="slide">
+					<h2>Slide 3</h2>
+					<button>button</button>
+				</div>
+				<div class="slide">
+					<h2>Slide 4</h2>
+					<a href="">I am link</a>
+					<img src="https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/4328153/android/sticker.png" alt="">
+				</div>
+				
+			</div>
+		</section>
 	</div>
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,130 @@
 @import '_default'
 @import '_extend'
 
+@keyframes layIn
+	0% 
+		width: 0
+	100%
+		width: 100%
+
+@keyframes layOut
+	0%
+		transform: translateX(0)
+	100%
+		transform: translateX(100%)
+
 body
 	line-height: 1.5
 	background-color: #eee
-	blur: 3px
-	display: flex
 
-	.trans
-		transform: scale(1)
-		user-select: none
+#fullpage
+	.section
+		min-height: 100vh
+
+		.slide
+			width: 90%
+			padding: 20px
+
+		.container
+			width: 100%
+			height: 100%
+			padding: 2em
+
+		.youtube-container
+			width: 100%
+			height: 100%
+
+	.block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transform: translateX(-100%)
+		background-color: #8e8e8e
+		animation: layIn 0.6s 0s, layOut 0.6s 0.6s
+		animation-fill-mode: both
+
+		// &.active
+		// 	transform: translateX(100%)
+		// 	transition: all .35s ease-in-out 0.3s
+
+	.row
+		position: relative
+		width: 100%
+
+		.text-side
+			position: absolute
+			width: 30%
+			left: 20%
+			top: 30%
+			z-index: 1
+			background-color: rgba(#fff, 0.8)
+			padding: 20px
+
+		.picture-side
+			float: right
+			position: relative
+			// position: absolute
+			width: 60%
+			right: 0
+			top: 20%
+			z-index: 0
+
+	.cards
+		@extend %flex-center
+		width: 90%
+		max-width: 1400px
+		margin: 60px auto 0
+
+		.card
+			margin: 20px
+
+			&:hover
+				.top-container
+					transform: translateY(0px)
+					transition: all .25s ease-in-out
+
+				.bottom-container
+					transform: translateY(0px)
+					transition: all .25s ease-in-out
+
+			.top-container
+				@extend %flex-center
+
+				position: relative
+				min-height: 280px
+				padding: 20px
+				filter: 
+				background-color: #f39999
+				transform: translateY(140px)
+				transition: all .25s ease-in-out
+				z-index: 1
+				.icon
+					max-width: 150px
+
+			.bottom-container
+				// min-height: 280px
+				padding: 5px 20px 10px
+				background-color: #fff
+				color: #333
+				transform: translateY(-140px)
+				transition: all .25s ease-in-out
+
+.youtube-container
+	position: relative
+
+	iframe
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+
+.btn-row
+	margin: 20px 0
+
+a[class^="btn-"]
+	display: inline-block
+	border: 1px solid #000
+	padding: 3px 8px
